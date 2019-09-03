@@ -23,7 +23,6 @@
 
 
 int main(void) {
-  size_t i;
   double A[5] = {
     [0] = 9.0,
     [1] = 2.9,
@@ -31,7 +30,7 @@ int main(void) {
     [4] = .00007,
   };
 
-  for (i = 0; i < 5; ++i) {
+  for (size_t i = 0; i < 5; ++i) {
     printf("element %zu is %g, \tits square is %g\n",
         i,
         A[i],
