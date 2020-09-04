@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 
 int main(void) {
@@ -11,12 +11,10 @@ int main(void) {
   };
 
   for (size_t i = 0; i < 5; ++i) {
-    printf("%zu is %g, \tits square is %g\n",
+    printf("A[%zu] = %g, A[%zu]^2 = %g\n",
         i,
         A[i],
-        A[i] * A[i]);
+        i,
+        A[i]*A[i]);
   }
-
-
-  return EXIT_SUCCESS;
 }
